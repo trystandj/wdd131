@@ -66,6 +66,7 @@ main {
     grid-gap: 1rem;
     padding: 1rem;
     width: 95vw;
+    max-width: 1000px;
     min-height: 50vh;
 }
 
