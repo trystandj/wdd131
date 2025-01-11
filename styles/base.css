@@ -193,3 +193,9 @@ footer {
     grid-column: 1 / 4;
     color: #fff;
 }
+
+.highlight {
+	color: yellow;
+	font-weight: 700;
+	font-family: lato;
+}
