@@ -6,7 +6,7 @@ const list = document.getElementById('list');
 
 button.addEventListener('click', function() {
    
-    if (input.value !== '') {
+    if (input.value.trim() !== '') {
 
         const li = document.createElement('li');
         const deleteButton = document.createElement('button');
@@ -27,6 +27,4 @@ button.addEventListener('click', function() {
     } else {
         alert('Please enter a valid chapter');
     }
-
-
 });
