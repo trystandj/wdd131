@@ -14,13 +14,8 @@ header, main, footer {
 main {
     display: grid;
     grid-template-columns: 1fr;
-<<<<<<< HEAD
     grid-gap: 1rem;
   }
-=======
-    column-gap: .5rem;
-}
->>>>>>> d35692f805d945f98ff0556fc6b496f8e238dfb5
 
 section {
     padding: .5rem;
