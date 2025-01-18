@@ -87,6 +87,7 @@ footer {
 	background-color: #bbb;
 	color: #333;
 	font-weight: 700;
+	text-decoration: underline;
 }
 
 #menu::before {

@@ -1,16 +1,9 @@
 @media (min-width: 600px) {
 
     
-    img {
-        width: 100%;
-        height: auto;
-        margin: .5rem;
-        border-radius:10%;
-    }
-
     h1 {
         font-size: 1.75rem; ;
-       text-align: center;
+       
     }
     
 
@@ -21,11 +14,6 @@
         position: relative;
 	}
 
-    .navigation{
-
-        flex-direction: row;
-        background-color: #18477C;
-    }
 
     .navigation{
         font-size: x-large;
@@ -33,6 +21,8 @@
         align-items: center;
         text-align: center;
         list-style-type: none;
+        flex-direction: row;
+        background-color: #18477C;
     }
     
     
@@ -48,11 +38,6 @@
     
     }
     
-    .navigation a:hover {
-        font-weight: 700;
-        text-decoration: underline;
-        text-decoration-color: white;
-    }
 
 	nav ul {
 		justify-content: flex-end;
