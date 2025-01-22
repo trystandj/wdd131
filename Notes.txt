@@ -1,0 +1,70 @@
+W03
+Web Design Principles
+
+CSS variables allow you to define reusable values in one place. For example, defining a color scheme or 
+spacing values as variables reduces the need to update multiple CSS rules when changes are required.
+
+Example: 
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+}
+
+button {
+  background-color: var(--primary-color);
+}
+
+a {
+  color: var(--secondary-color);
+}
+
+CSS variables can be updated dynamically using JavaScript
+, CSS variables are part of the DOM and can be scoped to specific elements.
+
+Using descriptive variable names makes CSS more readable and self-documenting, reducing the cognitive load for developers.
+his activity explores SVG (Scalar Vector Graphic) and the WebP image format which offers better compression to support faster page loads.
+"WebP is a modern image format that provides superior lossless and lossy compression for images on the web. Using WebP, webmasters and web 
+developers can create smaller, richer images that make the web faster." - developers.google.com
+
+The SVG format is a vector image format that is used for two-dimensional graphics with support for interactivity and animation. 
+"As such, it's a text-based, open Web standard for describing images that can be rendered cleanly at any size and are designed specifically to work well
+ with other web standards including CSS, DOM, JavaScript, and SMIL. SVG is, essentially, to graphics what HTML is to text." - MDN
+
+ Link for differnt img types:
+ https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types
+
+
+ "The older formats like PNG, JPEG, GIF have poor performance compared to newer formats like WebP and AVIF, but enjoy broader "historical" browser support. The newer image 
+ formats are seeing increasing popularity as browsers without support become increasingly irrelevant (meaning have virtually zero market share)." - MDN
+
+  convert site:
+  https://cloudconvert.com/jpg-to-webp
+  Image Optimization: 
+  https://byui-cse.github.io/wdd131-ww-course/resources/image-optimization.html
+
+
+  "Serving desktop-sized images to mobile devices can use 2-4x more data than needed. Instead of a "one-size-fits-all" approach to images, serve different image sizes 
+  to different devices. How many image versions should you create? There is no single 'correct' answer to this question. However, it's common to serve 3-5 different 
+  sizes of an image. Serving more image sizes is better for performance, but will take up more space on your servers and require writing a tiny bit more HTML." - Web.dev
+
+
+Standards: 
+https://byui-cse.github.io/wdd131-ww-course/resources/dev-standards.html
+
+
+
+<picture>
+  <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg" />
+  <source media="(min-width: 800px)" srcset="elva-800w.jpg" />
+  <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva" />
+</picture>
+
+ the first one that returns true will be displayed. In this case, if the viewport width 
+ is 799px wide or less, the first <source> element's image will be displayed. If the viewport width is 800px or more, it'll be the second one.
+
+
+ <picture>
+  <source srcset="images/hero-large.webp" media="min-width: 1000px">
+  <source srcset="images/hero-medium.webp" media="min-width: 550px">
+  <img src="images/hero-small.webp" alt="Orem Utah Temple" width="400" height="200">
+</picture>
