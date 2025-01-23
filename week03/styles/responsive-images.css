@@ -1,5 +1,11 @@
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
 .hero img {
-    width: 100%;
-    height: auto;
-    
-  }
+  width: 100%;
+  height: auto;
+}
+

@@ -13,12 +13,19 @@
 <body>
     <main>
         <div class="hero">
-            <picture>
-                <source media="(min-width: 1000px)" srcset="images/large_campinas_brazil_temple_lds.webp">
-                <source media="(min-width: 500px) and (max-width: 999px)" srcset="images/medium_campinas_brazil_temple_lds.webp">
-                <img src="images/small_campinas_brazil_temple_lds(1).webp" alt="Campinas, Brazil Temple" width="500" height="250">
-            </picture>
+          <picture>
+            <!-- Large image for screens 1000px and wider -->
+            <source media="(min-width: 1000px)" srcset="images/Large_campinas_brazil_temple_lds(2).webp">
+            <!-- Medium image for screens 500px and wider -->
+            <source media="(min-width: 500px)" srcset="images/medium_campinas_brazil_temple_lds(1).webp">
+            <!-- Fallback image for smaller screens -->
+            <img src="images/small_campinas_brazil_temple_lds(1).webp" 
+                 alt="Description of the image" 
+                 width="1500" 
+                 height="750">
+          </picture>
         </div>
-    </main>
+      </main>
+      
 </body>
 </html>

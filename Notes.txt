@@ -68,3 +68,155 @@ https://byui-cse.github.io/wdd131-ww-course/resources/dev-standards.html
   <source srcset="images/hero-medium.webp" media="min-width: 550px">
   <img src="images/hero-small.webp" alt="Orem Utah Temple" width="400" height="200">
 </picture>
+
+
+scores.push(100); // Adds a new element to the end of the array
+scores.pop(); // Removes the last element from the array
+scores.shift(); // Removes the first element from the array
+scores.unshift(100); // Adds a new element to the beginning of the array
+scores.slice(2,3); // Cut out a portion of the array starting at an index for a given length
+scores.splice(2, 1); // Removes 1 element from the array starting at index 2
+scores.join(', '); // transform the array into a single string with a comma and space delimiter option
+
+for (let i = 0; i < scores.length; i++) {
+  console.log(scores[i]);
+}
+Preferred: Arrays can be iterated over using other looping structures like forEach:
+
+scores.forEach(function(score) {
+  console.log(score);
+});
+
+let aScore = scores[0];  // The aScore variable is assigned the value of 100
+Arrays values can be modified:
+
+scores[0] = 99;
+
+
+
+function myFunc(theObject) {
+  theObject.make = "Toyota";
+}
+
+const myCar = {
+  make: "Honda",
+  model: "Accord",
+  year: 1998,
+};
+
+console.log(myCar.make); // "Honda"
+myFunc(myCar);
+console.log(myCar.make);
+
+
+function myFunc(theArr) {
+	theArr[0] = 30;
+  }
+  
+  const arr = [45];
+  
+  console.log(arr[0]); // 45
+  myFunc(arr);
+  console.log(arr[0]); // 30
+
+
+
+Function Hoisting 
+
+console.log(square(5)); // 25
+
+function square(n) {
+  return n * n;
+}
+
+This code runs without any error, despite the square() function being called before it's declared. This 
+is because the JavaScript interpreter hoists the entire function declaration to the top of the current scope,
+ so the code above is equivalent to:
+
+
+Function hoisting only works with function declarations — not with function expressions. The following code will not work:
+
+js
+Copy to Clipboard
+console.log(square(5)); // ReferenceError: Cannot access 'square' before initialization
+const square = function (n) {
+  return n * n;
+};
+
+
+
+Recursion:
+
+A function that calls itself is called a recursive function. In some ways, recursion is analogous to a loop. Both 
+execute the same code multiple times, 
+and both require a condition (to avoid an infinite loop, or rather, infinite recursion in this case).
+.
+function loop(x) {
+  // "x >= 10" is the exit condition (equivalent to "!(x < 10)")
+  if (x >= 10) {
+    return;
+  }
+  // do stuff
+  loop(x + 1); // the recursive call
+}
+loop(0);
+
+However, some algorithms cannot be simple iterative loops. For example, getting all the nodes of a
+ tree structure (such as the DOM) is easier via recursion:
+
+js
+Copy to Clipboard
+function walkTree(node) {
+  if (node === null) {
+    return;
+  }
+  // do something with node
+  for (let i = 0; i < node.childNodes.length; i++) {
+    walkTree(node.childNodes[i]);
+  }
+}
+
+
+The following example shows nested functions:
+
+js
+Copy to Clipboard
+function addSquares(a, b) {
+  function square(x) {
+    return x * x;
+  }
+  return square(a) + square(b);
+}
+
+console.log(addSquares(2, 3)); // 13
+console.log(addSquares(3, 4)); // 25
+console.log(addSquares(4, 5)); // 41
+
+
+Example:
+Assuming you have the following HTML:
+<div id="fullName"></div>
+
+And the following JavaScript function:
+function fullName(firstName, lastName) {
+    return firstName + ' ' + lastName;
+}
+
+
+
+JS and HTML example
+
+let firstName = 'John';
+let lastName = 'Doe';
+
+document.querySelector('#fullName').innerHTML = fullName(firstName, lastName);
+
+Explanation:
+The fullName function concatenates firstName and lastName with a space in between.
+document.querySelector('#fullName') selects the <div> element with the ID fullName.
+.innerHTML = fullName(firstName, lastName) sets the inner HTML of the selected <div> to "John Doe".
+After running the script, the HTML will be:
+
+<div id="fullName">John Doe</div>
+
+This effectively displays "John Doe" inside the <div> element with the ID fullName
