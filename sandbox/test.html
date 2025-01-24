@@ -1,84 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="test.css">
-        ">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Description" content="Trystan Jones's WDD 131 Dynamic Web Fundamentals Temples Page. This site will feature a temple ablum following a responsive behavior design.">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        <meta name="Author" content="Trystan Jones">
-        <title>WDD 131 - Dynamic Web Fundamentals - Trystan Jones</title>
-        <script src="test.js" defer></script>
-       
+        header {
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 1px solid #ccc;
+        }
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    </head>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+            position: relative;
+        }
+
+        .data, .weather {
+            width: 20%;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .data h3, .weather h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .large-image {
+            width: 55%;
+            height: auto;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #888;
+            background-color: #f9f9f9;
+            object-fit: cover;
+        }
+
+        .large-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #555;
+            border-top: 1px solid #ccc;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .value {
+            margin-left: 5px;
+        }
+    </style>
+</head>
 <body>
-    <header>
-        <h1>Temple Album</h1>
-        <button type="button" id="menu"></button>
-        <nav>
-            <ul class="navigation">
-                <li><a href="#" target="_blank" title="Home">Home</a></li>
-                <li><a href="#" target="_blank" title="Old">Old</a></li>
-                <li><a href="#" target="_blank" title="New">New</a></li>
-                <li><a href="#" target="_blank" title="Large">Large</a></li>
-                <li><a href="#" target="_blank" title="Small">Small</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header>Place Title</header>
 
-    <main>
-        <section>
-            <h2>Home</h2>
-            <div class="container">
-                <figure>
-                    <img src="images/campinas_brazil_temple.jpg" alt="Temple 1">
-                    <figcaption>Temple 1</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/campinas_brazil_temple.jpg" alt="Temple 1">
-                    <figcaption>Temple 2</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/campinas_brazil_temple.jpg" alt="Temple 1">
-                    <figcaption>Temple 3</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/campinas_brazil_temple.jpg" alt="Temple 1">
-                    <figcaption>Temple 4</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/campinas_brazil_temple.jpg" alt="Temple 1">
-                    <figcaption>Temple 5</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/campinas_brazil_temple.jpg" alt="Temple 1">
-                    <figcaption>Temple 6</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/campinas_brazil_temple.jpg" alt="Temple 1">
-                    <figcaption>Temple 7</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/campinas_brazil_temple.jpg" alt="Temple 1">
-                    <figcaption>Temple 8</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/campinas_brazil_temple.jpg" alt="Temple 1">
-                    <figcaption>Temple 9</figcaption>
-                </figure>
-            </div>
-        </section>
-    </main>
+    <div class="container">
+        <div class="data">
+            <h3>Data</h3>
+            <p><label>Label:</label> <span class="value">Value</span></p>
+            <p><label>Label:</label> <span class="value">Value</span></p>
+            <p><label>Label:</label> <span class="value">Value</span></p>
+            <p><label>Label:</label> <span class="value">Value</span></p>
+            <p><label>Label:</label> <span class="value">Value</span></p>
+        </div>
+
+        <div class="large-image">
+            <picture>
+                <source media="(min-width: 600px)" srcset="../images/wallace-fonseca-Xb_numSsC2E-unsplash.jpg">
+                <img src="../images/marianna-smiley-IA0-dP_hnbI-unsplash.jpg" 
+                     alt="Description of the image" 
+                     width="1500" 
+                     height="750">
+              </picture>
+        </div>
+
+        <div class="weather">
+            <h3>Weather</h3>
+            <p><label>Label:</label> <span class="value">Value</span></p>
+            <p><label>Label:</label> <span class="value">Value</span></p>
+            <p><label>Label:</label> <span class="value">Value</span></p>
+            <p><label>Label:</label> <span class="value">Value</span></p>
+        </div>
+    </div>
 
     <footer>
-        <p>  <span id="currentyear"></span> @2024 | Trystan Jones | Vermont</p>
-        <p id="lastModified"></p>
+        Standard Footer Content - Copyright - Name - Location<br>
+        Last Modified Date
     </footer>
-
 </body>
 </html>
