@@ -90,10 +90,14 @@
     
   }
 
+  .weather img {
+
+    display: none;
+}
 
 
   .weather-heading::after {
-      content: url('../images/weather-icon.svg'); 
+    content: "⛅";
       display: inline-block;
       margin-left: 50px; 
       width: 3rem; 
