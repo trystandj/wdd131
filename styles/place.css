@@ -5,6 +5,8 @@
       --third-color: #2A6041;
       --background-color: #fff;
       --font-family: 'roboto', 'opensans', 'sans-serif', 'Montserrat';
+      --font-main: 'montserrat';
+      --font-body: 'roboto';
       --text-color: black;
       --font-size: 1rem;
       --font-size-large: 1.5rem;
@@ -29,6 +31,7 @@
       font-weight: bold;
       color: #fff;
       background-color: var(--secondary-color);
+      font-family: var(--font-main);
   }
 
     .container{
@@ -46,7 +49,7 @@
 
   .hero-imgage picture, 
   .hero-imgage img {
-      
+
       
       object-fit: cover;
       object-position: center; /* Center the image */
@@ -59,7 +62,7 @@
       background-color: var(--background-color);
       opacity:.75;
       box-shadow:var(--box-shadow);
-      
+      font-family: var(--font-body);
   }
 
   .weather {
@@ -87,13 +90,25 @@
     background-color: var(--third-color);
     color: #fff;
     padding: 5px;
-    
+    font-family: var(--font-main);
   }
+
+  
 
   .weather img {
 
     display: none;
 }
+  
+  p {
+
+    display: block;
+    margin: 0.5rem;
+  }
+  p label {
+    font-weight: bold;
+    
+  }
 
 
   .weather-heading::after {
@@ -109,7 +124,7 @@
       background:var(--secondary-color);
       padding: 2rem;
       text-align: center;
-      grid-column: 1 / 4;
+      font-family: var(--font-body);
       color: #fff;
   }
 }

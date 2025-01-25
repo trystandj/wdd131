@@ -9,3 +9,4 @@ lastModified.innerHTML = `<span class="highlight">Last Modification: ${new Intl.
         timeStyle: "short",
 	}
 ).format(oLastModif)}</span>`;
+
