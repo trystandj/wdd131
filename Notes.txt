@@ -220,3 +220,12 @@ After running the script, the HTML will be:
 <div id="fullName">John Doe</div>
 
 This effectively displays "John Doe" inside the <div> element with the ID fullName
+
+
+
+
+Lazy loading:
+The loading attribute has only two states, lazy and eager. The eager value instructs the browser to render the resource immediately and is the default. The lazy attribute
+ will defer loading the element, such as an <img> or <iframe>, until the element is called into view by some user action, such as scrolling.
+
+

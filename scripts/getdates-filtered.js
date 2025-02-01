@@ -10,4 +10,4 @@ lastModified.innerHTML = `<span class="highlight">Last Modification: ${new Intl.
 	}
 ).format(oLastModif)}</span>`;
 
-console.log(`Welcome to the ${courseName} ${stuFirstName}!`);
+
