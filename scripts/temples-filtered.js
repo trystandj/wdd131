@@ -98,7 +98,7 @@ const temples = [
 
   const oldTemples = document.querySelector('#old-temples');
   oldTemples.addEventListener('click', () => {
-	let oldTemp = temples.filter((temple) => parseInt(temple.dedicated.split(",")[0]) < 2000);
+	let oldTemp = temples.filter((temple) => parseInt(temple.dedicated.split(",")[0]) < 1900);
 	displayTempleCard(oldTemp);
   });
 
@@ -110,7 +110,7 @@ const temples = [
 
   	const largeTemples = document.querySelector('#large-temples');
   	largeTemples.addEventListener('click', () => {
-	let largeTemp = temples.filter((temple) => temple.area > 100000);
+	let largeTemp = temples.filter((temple) => temple.area > 90000);
 	displayTempleCard(largeTemp);
   });
 
