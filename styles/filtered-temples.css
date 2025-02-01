@@ -146,3 +146,9 @@ figure img {
 	height: auto;
 	border-radius: 10px;
 }
+
+figure .label {
+	font-size: large;
+	font-weight: bold;
+
+}
