@@ -110,7 +110,7 @@ const temples = [
 
   	const largeTemples = document.querySelector('#large-temples');
   	largeTemples.addEventListener('click', () => {
-	let largeTemp = temples.filter((temple) => temple.area > 100000);
+	let largeTemp = temples.filter((temple) => temple.area >= 100000);
 	displayTempleCard(largeTemp);
   });
 

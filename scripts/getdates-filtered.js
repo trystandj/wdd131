@@ -11,3 +11,4 @@ lastModified.innerHTML = `<span class="highlight">Last Modification: ${new Intl.
 ).format(oLastModif)}</span>`;
 
 
+
