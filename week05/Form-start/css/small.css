@@ -1,0 +1,123 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #ddd;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #666;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {border-bottom: solid 1px #333;}
+nav ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+
+.form fieldset {
+    margin: 2rem 0;
+    border : 1px solid #ddd;
+    padding: .5rem 2%;
+    border-radius: 6px;
+    padding: .5rem;
+
+}
+
+.form legend {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.form label{
+    display: block;
+    padding-top: 1rem;
+    color: red;
+    font-size: medium;
+}
+
+.form div {
+    padding-top: 1rem;
+    color:blue;
+font-size: medium;
+
+
+
+}
+.form div {
+    padding-top: 1rem;
+    color:blue;
+font-size: medium;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="tel"],
+.form input[type="url"],
+.form input[type="date"],
+.form input[type="number"]{
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.form input[type="radio"], 
+.form input[type="checkbox"] {
+    margin-right: .5rem;
+    
+}
+
+.form input[type="submit"] {
+    background-color: #666;
+    color: #fff;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
