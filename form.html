@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trystan Jones's WDD 131 Dynamic Web Fundamentals Temples Page. This site will feature a temple ablum following a responsive behavior design.">
+
+    <meta name="author" content="Trystan Jones">
+    <title>WDD 131 - Product Review - Trystan Jones</title>
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    
+
+    <form action="thanks.html" method="get" class="form">
+        <fieldset>
+            <legend>Product Name</legend>
+            <label for="productSelect">Choose a product:</label>
+            <select id="productSelect" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+    
+            <label>Overall Rating</label>
+            <div class="stars">
+                <input type="radio" id="fivestar" name="stars" value="5" required>
+                <label for="fivestar"></label>
+                <input type="radio" id="fourstar" name="stars" value="4">
+                <label for="fourstar"></label>
+                <input type="radio" id="threestar" name="stars" value="3">
+                <label for="threestar"></label>
+                <input type="radio" id="twostar" name="stars" value="2">
+                <label for="twostar"></label>
+                <input type="radio" id="onestar" name="stars" value="1">
+                <label for="onestar"></label>
+            </div>
+    
+            <label for="installation">Date of Installation</label>
+            <input type="date" id="installation" name="installation" required>
+    
+            <div class="multi">Which Features did you find useful in the product?</div>
+            <div><em>(Check all that apply)</em></div>
+            <label><input type="checkbox" id="durability" name="features[]" value="durability"> Durability</label>
+            <label><input type="checkbox" id="easeofuse" name="features[]" value="easeofuse"> Ease of Use</label>
+            <label><input type="checkbox" id="performance" name="features[]" value="performance"> Performance</label>
+            <label><input type="checkbox" id="design" name="features[]" value="design"> Design</label>
+    
+            <label for="review">Written Review (optional)</label>
+            <textarea id="review" name="review"></textarea>
+    
+            <label for="name">Your Name (optional)</label>
+            <input type="text" id="name" name="name">
+    
+            <input type="submit" value="Submit Review">
+        </fieldset>
+    </form>
+    <footer>
+        <p>  <span id="currentyear"></span> @2024 | Trystan Jones | Vermont</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
