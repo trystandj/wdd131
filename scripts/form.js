@@ -60,7 +60,13 @@ const products = [
     }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const reviewCount = localStorage.getItem("reviewCount") || 0;
-    document.getElementById("reviewCount").textContent = reviewCount;
-});
+function updateReviewCount() {
+    let reviewCount = localStorage.getItem("reviewCount");
+
+    const reviewCountElement = document.getElementById("reviewCount");
+    if (reviewCountElement) {
+        reviewCountElement.textContent = reviewCount;
+    }
+}
+
+document.addEventListener("DOMContentLoaded", updateReviewCount);
