@@ -33,7 +33,7 @@ links.forEach(link => {
         link.setAttribute('href', localPath);
     } else {
         // For production (GitHub Pages), use the full URL
-        const fullUrl = `https://trystandj.github.io${link.getAttribute('href').replace('/project', '')}`;
+        const fullUrl = `https://trystandj.github.io//wdd131${link.getAttribute('href').replace('/project', '')}`;
         link.setAttribute('href', fullUrl);
     }
 });
