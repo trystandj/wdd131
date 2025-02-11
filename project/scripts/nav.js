@@ -29,11 +29,11 @@ links.forEach(link => {
     // Check if we're on the local development environment
     if (window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost') {
         // For local development, use relative paths
-        const localPath = link.getAttribute('href').replace('https://trystandj.github.io', '');
+        const localPath = link.getAttribute('href').replace('https://trystandj.github.io/wdd131', '');
         link.setAttribute('href', localPath);
     } else {
         // For production (GitHub Pages), use the full URL
-        const fullUrl = `https://trystandj.github.io//wdd131${link.getAttribute('href').replace('/project', '')}`;
+        const fullUrl = `https://trystandj.github.io${link.getAttribute('href').replace('/project', '')}`;
         link.setAttribute('href', fullUrl);
     }
 });
