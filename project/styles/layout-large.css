@@ -2,13 +2,13 @@
 
     :root {
         --primary-color: #EDEAE5;
-        --secondary-color: #026670;
+        --secondary-color: #00545c;
         --third-color: #FCE181;
-        --background-color: #fff;
+        --background-color: #FFFFFF;
         --font-family: 'roboto', 'opensans', 'sans-serif', 'Montserrat';
         --font-main: 'montserrat';
         --font-body: 'roboto';
-        --text-color: #ffff;
+        --text-color: #FFFFFF;
         --font-size: 1rem;
         --font-size-large: 1.5rem;
         --font-size-small: 0.875rem;
@@ -50,7 +50,7 @@
     }
     .navigation a {
         display: block;
-        color: #fff;
+        color: var(--text-color);
         padding: 1rem;
         text-decoration: none;
         text-align: center;
@@ -75,6 +75,21 @@
         padding: 2rem;
         text-align: center;
         font-family: var(--font-body);
-        color: #fff;
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
     }
+
+    footer nav {
+        position: relative;
+        
+    }
+
+    .sociallinks a {
+        display: inline-block; 
+      }
+      
+      .sociallinks a::after {
+        content: ""; 
+      }
 }
