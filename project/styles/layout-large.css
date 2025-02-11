@@ -41,7 +41,7 @@
         text-align: center;
         list-style-type: none;
         flex-direction: row;
-        background-color: var(--background-color);
+        background-color: var(--secondary-color);
     }
     
     
@@ -69,4 +69,12 @@
     #menu {
 		display: none; 
 	}
+
+    footer {
+        background:var(--secondary-color);
+        padding: 2rem;
+        text-align: center;
+        font-family: var(--font-body);
+        color: #fff;
+    }
 }

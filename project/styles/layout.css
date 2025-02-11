@@ -1,4 +1,4 @@
-@media (min-width: 651px) {
+
     :root {
         --primary-color: #EDEAE5;
         --secondary-color: #026670;
@@ -22,7 +22,7 @@
 
 
     header {
-        background-color: var(--background-color);
+        background-color: var(--secondary-color);
     }
 
     h1 {
@@ -51,7 +51,7 @@
         font-size: 1.5rem;
         border: 0;
         background: none;
-        color: var(--secondary-color);
+        color: var(--third-color);
         position: absolute;
         top: 1rem;
         right: 1rem;
@@ -72,7 +72,7 @@
         flex-direction: column;
         justify-content: space-around;
         list-style: none;
-        background-color: var(--background-color);
+        background-color: var(--secondary-color);
         color: var(--text-color);
         padding: 0;
         margin: 0;
@@ -86,7 +86,7 @@
         color: var(--text-color);
     }
     .navigation a:hover {
-        background-color: var(--background-color);
+        background-color: var(--secondary-color);
         color: var(--third-color);
         font-weight: 700;
         text-decoration: underline;
@@ -103,6 +103,12 @@
     .open a {
         display: block;
     }
+    footer {
+        background:var(--secondary-color);
+        padding: 2rem;
+        text-align: center;
+        font-family: var(--font-body);
+        color: #fff;
+    }
 
 
-}
