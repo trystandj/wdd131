@@ -35,13 +35,13 @@
 	}
 
     .navigation{
-        font-size: x-large;
+        font-size: var(--font-size-large);
         display: flex;
         align-items: center;
         text-align: center;
         list-style-type: none;
         flex-direction: row;
-        background-color: #18477C;
+        background-color: var(--background-color);
     }
     
     
