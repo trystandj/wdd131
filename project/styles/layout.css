@@ -219,12 +219,12 @@
     }
     
     figcaption {
-        font-size: xx-large;
+        font-size: medium;
         font-weight: bold;
     }
     
     figure p {
-        font-size: medium;
+        font-size: small;
     }
     
     figure img {
