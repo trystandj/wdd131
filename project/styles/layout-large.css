@@ -79,6 +79,10 @@
         font-size: x-large;
     }
 
+    .what-is-fpv h2{
+        font-size: xx-large;
+      }
+
 
     .articles {
         display: flex;
