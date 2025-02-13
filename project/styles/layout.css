@@ -210,21 +210,21 @@
         padding: 1rem;
        
      
-        border-radius: 10px;
+        border-radius: 20px;
     
-        width: 75%;
+        width: 65%;
         height: auto;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
         background-color: var(--primary-color);
     }
     
     figcaption {
-        font-size: medium;
+        font-size: x-large;
         font-weight: bold;
     }
     
     figure p {
-        font-size: small;
+        font-size: medium;
     }
     
     figure img {
