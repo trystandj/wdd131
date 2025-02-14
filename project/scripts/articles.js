@@ -1,10 +1,5 @@
 const articles = [
-    {
-        Name: "About Me",
-        Text: "Learn more about my personal journey",
-        imageUrl: "images/dji_fly_20241020_160320_0112_1729456812755_photo.jpg",
-        location: "aboutme.html"
-    },
+
     {
         Name: "Where to Get Started",
         Text: "Learn more about how you can start your FPV journey",
@@ -16,7 +11,14 @@ const articles = [
         Text: "Learn how to take better shots",
         imageUrl: "https://images.unsplash.com/photo-1542291771-64f962701184?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZHJvbmUlMjB2aWV3fGVufDB8fDB8fHww",
         location: "guide.html"
+    },
+    {
+        Name: "About Me",
+        Text: "Learn more about my personal journey",
+        imageUrl: "images/dji_fly_20241020_160320_0112_1729456812755_photo.jpg",
+        location: "aboutme.html"
     }
+
 ];
 
 displayArticles(articles);

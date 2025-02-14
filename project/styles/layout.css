@@ -190,7 +190,7 @@
         font-size: small;
       }
 
-      .what-is-fpv img {
+      .what-is-fpv img, video {
         width: 50vw;
         height: auto;
       }

@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="https://trystandj.github.io/wdd131/project/styles/layout.css#">
-        <link rel="stylesheet" href="https://trystandj.github.io/wdd131/project/styles/layout-large.css#">
+
         <link rel="stylesheet" href="styles/layout.css">
         <link rel="stylesheet" href="styles/layout-large.css">
         <meta charset="UTF-8">
@@ -24,15 +23,76 @@
         <button type="button" id="menu" aria-label="Open navigation menu"></button>
         <nav>
             <ul class="navigation">
-                <!-- <li><a href="https://trystandj.github.io/wdd131/project/index.html#" id="home" title="Home">Home</a></li>
-                <li><a href="https://trystandj.github.io/wdd131/project/guide.html#" id="guide" title="Guide">Guides</a></li>
-                <li><a href="https://trystandj.github.io/wdd131/project/aboutme.html" id="aboutme" title="AboutMe">About Me</a></li> -->
                 <li><a href="index.html" id="home" title="Home">Home</a></li>
                 <li><a href="guide.html" id="guide" title="Guide">Guides</a></li>
                 <li><a href="aboutme.html" id="aboutme" title="AboutMe">About Me</a></li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 650px)" srcset="images/jp-valery-EAx4OpPCSrs-unsplash.jpg">
+                <img src="images/jp-valery-EAx4OpPCSrs-unsplash.jpg" 
+                     alt="Misty Mountians" 
+                     width="1750" 
+                     height="750">
+            </picture>
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1>Guides to Taking Better Shots</h1>
+                <p>Improve Your FPV Journey</p>
+            </div>
+        </section>
+
+        <section class="what-is-fpv">
+            <div class="card1">
+                <video width="500" height="600" autoplay muted loop playsinline preload="none">
+                    <source src="videos/plan.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="card2">
+                <h2>Plan Your Shots Ahead</h2>
+                <p>Scout Locations: Whether it’s for a race or a scenic film, knowing the area before flying helps. Look for interesting visual cues like tall buildings, trees, or winding rivers to make your shots more engaging.</p>
+            </div>
+        </section>
+
+        <section class="what-is-fpv">
+            <div class="card2">
+                <h2>Bird's Eye View</h2>
+                <p>Bird’s Eye View FPV Guide: Master stunning aerial shots with FPV! Adjust your camera tilt (0°-15°) for better top-down angles, use smooth throttle control to maintain stability, and experiment with flight techniques like hover spins and slow descents. Ideal for urban landscapes, nature, and action sports. Optimize camera settings (4K, 30-60fps, ND filters) and avoid common mistakes like over-tilting or losing altitude. With practice, you can take your FPV footage to the next level! </p>
+
+            </div>
+            <div class="card1">
+                <picture>
+                    <source media="(min-width: 650px)" srcset="images/bernd-dittrich-jOmqZPGxqr0-unsplash.jpg">
+                    <img src="images/bernd-dittrich-jOmqZPGxqr0-unsplash.jpg" 
+                         alt="Brazil Resort and Town" 
+                         width="500px" 
+                         height="600px"
+                         loading="lazy">
+                </picture>
+            </div>
+
+        </section>
+
+        <section class="what-is-fpv">
+            <div class="card1">
+                <video width="500" height="600" autoplay muted loop playsinline preload="none">
+                    <source src="videos/Untitled video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+            </div>
+            <div class="card2">
+                <h2>Smooth Flying Movements</h2>
+                <p>Master Smooth Flying Movements: Achieve cinematic FPV footage with controlled and fluid motions. Use gentle stick inputs to avoid jerky movements, practice coordinated turns by combining yaw and roll, and refine throttle control to maintain steady altitude. Smooth flight paths enhance tracking shots, dives, and low-to-the-ground maneuvers. With patience and practice, your FPV flights will look seamless and professional! </p>
+
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>  <span id="currentyear"></span> @2024 | Trystan Jones | WDD 131</p>
