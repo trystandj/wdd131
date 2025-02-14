@@ -183,7 +183,7 @@
         box-shadow: var(--border-radius);
       }
       .what-is-fpv h2{
-        font-size: x-large;
+        font-size: large;
       }
 
       .what-is-fpv p {
@@ -198,6 +198,7 @@
 
       .card2 {
         margin-left: 25px;
+        margin-right: 25px;
       }
 
     
