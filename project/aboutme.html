@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
         <link rel="stylesheet" href="styles/layout.css">
         <link rel="stylesheet" href="styles/layout-large.css">
         <meta charset="UTF-8">
@@ -12,6 +11,7 @@
         <title>Your FPV Journey</title>
         <script src="scripts/getdates.js" defer></script>
         <script src="scripts/nav.js" defer></script>
+        <script src="scripts/photo.js" defer></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,16 +23,47 @@
         <button type="button" id="menu" aria-label="Open navigation menu"></button>
         <nav>
             <ul class="navigation">
-                <!-- <li><a href="https://trystandj.github.io/wdd131/project/index.html#" id="home" title="Home">Home</a></li>
-                <li><a href="https://trystandj.github.io/wdd131/project/guide.html#" id="guide" title="Guide">Guides</a></li>
-                <li><a href="https://trystandj.github.io/wdd131/project/aboutme.html" id="aboutme" title="AboutMe">About Me</a></li> -->
                 <li><a href="index.html" id="home" title="Home">Home</a></li>
                 <li><a href="guide.html" id="guide" title="Guide">Guides</a></li>
                 <li><a href="aboutme.html" id="aboutme" title="AboutMe">About Me</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 650px)" srcset="images/michelle-spollen-dC2FsjoXsPQ-unsplash.jpg">
+                <img src="images/michelle-spollen-dC2FsjoXsPQ-unsplash.jpg" 
+                     alt="Misty Mountians" 
+                     width="1750" 
+                     height="750">
+            </picture>
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1>About Me</h1>
+            </div>
+        </section>
+        <section class="what-is-fpv1">
+            <div class="card1">
+                <picture>
+                    <source media="(min-width: 650px)" srcset="images/IMG_0677.webp">
+                    <img src="images/IMG_0677.webp" 
+                         alt="Trystan Jones Picture" 
+                         width="500px" 
+                         height="600px"
+                         loading="lazy">
+                </picture>
+            </div>
+            <div class="card2">
+                <h2>Hello I'm Trystan Jones</h2>
+                <p>Anything FPV you will instantly have my attention. I've grown a strong interest for FPV drones and capturing epic shots/videos. I love the sensation that comes from flying and being able to see high above</p>
+                <p>This is what lead me to build this site. To help others start their own FPV journeys. It may not be much but it brings me lots of joy as I get to talk about FPV and build a site for it. Two of my favorite things.</p>
+            </div>
+        </section>
+        <section class="gallary">
 
+        </section>
+    </main>
     <footer>
         <p>  <span id="currentyear"></span> @2024 | Trystan Jones | WDD 131</p>
         <p id="lastModified"></p>

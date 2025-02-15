@@ -83,6 +83,19 @@
         font-size: xx-large;
       }
 
+      
+    .what-is-fpv1 img {
+        width: 40vw;
+        height: auto;
+      }
+
+    .what-is-fpv1 p {
+        font-size: x-large;
+    }
+
+    .what-is-fpv1 h2{
+        font-size: xx-large;
+      }
 
     .articles {
         display: flex;
@@ -131,4 +144,17 @@
         font-weight: bold;
 
     }
+
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        width: 100%; 
+        max-width: 400px; 
+        aspect-ratio: 16/9; 
+    }
+
 }
