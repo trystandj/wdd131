@@ -1,29 +1,29 @@
 const galleries = [
     {
         Name: "Top House View",
-        imageUrl: "images/photo1.png",
+        imageUrl: "images/photo1.webp",
     },
     {
         Name: "Fall",
-        imageUrl:"images/photo2.png",    },
+        imageUrl:"images/photo2.webp",    },
     {
         Name: "Forest Frame",
-        imageUrl: "images/photo3.png",
+        imageUrl: "images/photo3.webp",
     },
     {
         Name: "Fall and Winter",
-        imageUrl: "images/IMG_0970.jpg",
+        imageUrl: "images/IMG_0970.webp",
     },
     {
         Name: "Fall and Winter prt2",
-        imageUrl: "images/photo4.png",    },
+        imageUrl: "images/photo4.webp",    },
     {
         Name: "Top Down",
-        imageUrl: "images/dji_fly_20241020_160320_0112_1729456812755_photo.jpg",
+        imageUrl: "images/dji_fly_20241020_160320_0112_1729456812755_photo.webp",
     },
     {
         Name: "Typical Winter",
-        imageUrl: "images/dji_fly_20250112_151938_0149_1736713312519_photo.jpg",
+        imageUrl: "images/dji_fly_20250112_151938_0149_1736713312519_photo.webp",
     },
     {
         Name: "Fall Top Down",

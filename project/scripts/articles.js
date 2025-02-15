@@ -3,7 +3,7 @@ const articles = [
     {
         Name: "Where to Get Started",
         Text: "Learn more about how you can start your FPV journey",
-        imageUrl: "images/dji_fly_20250112_151938_0149_1736713312519_photo.jpg",
+        imageUrl: "images/dji_fly_20250112_151938_0149_1736713312519_photo.webp",
         location: "https://consumertestedreviews.org/product/best-camera-drones/?AdGroupId=1326013379964604&AdId=82876062840100&BidMatchType=bp&CampaignId=519158175&msclkid=2e39b5a167ac19af983bd20c341d935d&QueryString=best%20fpv%20drones&keyword=drones%20with%20cameras&MatchType=p&Network=o&cpid=e457f969-540b-402a-8001-bb50125b166b&lpid=15680098-1744-4281-8cbb-431a56037d23&tooltip=tooltip&utm_source=bing&utm_medium=cpc&utm_campaign=Drone%20%2F%20BING%20%2F%20USA%20%2F%20Broad%20%2F%20ECPC%20%2F%2095%20(Generic)&utm_term=drones%20with%20cameras&utm_content=Phrase#no3"
     },
     {
@@ -15,7 +15,7 @@ const articles = [
     {
         Name: "About Me",
         Text: "Learn more about my personal journey",
-        imageUrl: "images/dji_fly_20241020_160320_0112_1729456812755_photo.jpg",
+        imageUrl: "images/dji_fly_20241020_160320_0112_1729456812755_photo.webp",
         location: "aboutme.html"
     }
 
